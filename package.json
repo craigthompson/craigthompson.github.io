@@ -2,15 +2,19 @@
   "name": "craigthompson.github.io",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://craigthompson.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "express": "^4.19.2",
+    "gh-pages": "^6.1.1",
     "nodemon": "^3.1.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
